@@ -1,0 +1,57 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-size-adjust: none;
+  background: var(--color-light-gray);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+}
+
+.qr-code-container {
+  background: var(--color-white);
+  max-width: 320px;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.qr-code-container p {
+  color: var(--color-grayish-blue);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.qr-code-container h1 {
+  color: var(--color-dark-blue);
+  font-size: 1.25rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.625rem;
+  margin-bottom: 1rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700 */
