@@ -10,7 +10,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -19,7 +18,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](design/my_final_design.png/screenshot.jpg)
+![](design/my_final_design.png)
 
 ### Links
 
@@ -36,24 +35,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
 .proud-of-this-css {
-  color: papayawhip;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ## Author
 
