@@ -28,7 +28,7 @@ body {
   max-width: 320px;
   padding: 1.25rem;
   border-radius: 0.625rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 12px 7px 20px 6px rgba(57, 75, 84 / 8%);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -52,6 +52,3 @@ img {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
-/* - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 400, 700 */
