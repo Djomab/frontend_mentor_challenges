@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --very-dark-cyan: hsl(158, 70%, 18%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background: var(--primary-cream);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 1px);
+  margin: 0 1.5rem;
+}
+
+main {
+  background: var(--white);
+  max-width: 600px;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-top: 1.25rem;
+}
+
+.product-detail {
+  padding: 1.5rem;
+}
+
+.product-detail h1 {
+  color: var(--very-dark-blue);
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-detail h2 {
+  color: var(--dark-grayish-blue);
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.product-detail p {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+}
+
+.product-detail ul {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.product-detail ul li:first-child {
+  color: var(--primary-dark-cyan);
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.product-detail ul li:last-child {
+  color: var(--dark-grayish-blue);
+  font-family: 'Fraunces', sans-serif;
+}
+
+.product-detail .btn {
+  width: 100%;
+  font-size: medium;
+  font-weight: 700;
+  padding: 1rem;
+  background: var(--primary-dark-cyan);
+  color: var(--white);
+  border: none;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail .btn:hover {
+  background: var(--very-dark-cyan);
+}
+
+.product-detail img {
+  margin-right: 0.625rem;
+}
+
+.product-image img{
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.attribution { font-size: 14px; text-align: center; margin-top: 1.25rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 640px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 1rem;
+  }
+
+  .product-image img {
+    border-radius: 1rem 0 0rem 1rem;
+  }
+
+  picture img {
+    height: 100%;
+  }
+}
