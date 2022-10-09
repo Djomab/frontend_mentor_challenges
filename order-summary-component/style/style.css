@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--primary-pale-blue);
+  font-family: 'Red Hat Display';
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 1px);
+}
+
+main {
+  background: #fff;
+  max-width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.order-image {
+  margin-bottom: 1rem;
+}
+
+.order-description {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.order-description h1 {
+  margin-bottom: 1rem;
+  color: var(--dark-blue);
+}
+
+.order-description p {
+  margin-bottom: 1.5rem;
+  color: var(--desaturated-blue);
+}
+
+.plan-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.plan-details {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.plan-details .text {
+  margin-left: 1.25rem;
+  margin-top: 1rem;
+}
+
+.plan-details .text h5 {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.plan-box .plan-action {
+  cursor: pointer;
+  color: var(--primary-bright-blue);
+  font-weight: 500;
+}
+
+.plan-box .plan-action:hover {
+  color: hsl(245, 84%, 70%);
+  text-decoration: none;
+}
+
+.order-description .btn-price {
+  outline: none;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.625rem;
+  background: var(--primary-bright-blue);
+  cursor: pointer;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  /* box-shadow: 0.625rem 0.625rem 1rem 1rem rgba(57, 75, 84 / 8%); */
+  box-shadow: 12px 7px 20px 6px rgba(57, 75, 84 / 8%);
+}
+
+.order-description .btn-price:hover {
+  background: hsl(245, 82%, 63%);
+}
+
+.order-description .btn-cancel {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+
+.order-description .btn-cancel:hover {
+  color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 425px) {
+  main {
+    max-width: 85%;
+  }
+
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+}
+.attribution { font-size: 12px; text-align: center; margin-top: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
