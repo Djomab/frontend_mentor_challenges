@@ -23,8 +23,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Djomab/frontend_mentor_challenges/tree/master/nft-preview-card-component)
+- Live Site URL: [Add live site URL here](https://djomab-nft-preview-card-component.netlify.app/)
 
 ## My process
 
